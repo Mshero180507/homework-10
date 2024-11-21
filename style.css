@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/*header code*/
+header{
+    z-index: 1;
+    padding: 30px 28px 31px 80px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    margin-top: -84px
+}
+
+#logo{
+    width: 20px;
+    height: 25px;
+    display: inline-block;
+    margin-right:676px;
+}
+
+.header-titles{
+    color: #636060;
+    font-weight: 400;
+    font-size: 17px;
+    margin-right:50px;
+    display: inline-block;
+}
+
+body > i {
+    display: none !important;
+}
+
+/*body code*/
+#big-pic{
+    width: 100%;
+	height: 606px;
+	background-image: url("./images/1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    margin: 84px 0px 84px 0px;
+    position:relative;
+}
+
+#pic-text{
+    position: absolute;
+    color: white ;
+    font-weight: 700;
+    font-size: 79px;
+    left: 407px;
+    top: 238px;
+
+}
+
+#secondpic-text{
+    position: absolute;
+    color: white ;
+    font-weight: 400;
+    font-size: 19px;
+    left:553px;
+    top: 360px;
+}
+
+#mama-div{
+    padding: 0px 98px 140px 100px;
+    display: flex;
+    gap:104px
+}
+
+#card-discribtion{
+    display: inline-block;
+    max-width: 235px;
+}
+
+#discover{
+    font-size: 17px;
+    color: #636060;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+
+#title{
+    font-size: 28px;
+    color: #010101;
+    font-weight: 400;
+    margin-bottom: 37px;
+}
+
+#content{
+    font-size: 28px;
+    color: #636060;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img{
+    width: 286px;
+    height: 195px;
+    margin-bottom: 23px;
+}
+
+.card-title{
+    font-weight: 400;
+    font-size: 19px;
+    color: #343232;
+    margin-bottom: 9px;
+}
+
+.card-text{
+    font-weight: 400;
+    font-size: 18px;
+    color:#636060;
+    width: 286px;
+}
+
+.card{
+    padding-right: 33px;
+    padding-bottom: 56px;
+}
+
+@media only screen and (min-width: 1024px){
+    #discover{
+        font-size: 15px;
+    }
+    #title, #content{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+
+    #mama-div{
+        gap:70px;
+        padding: 0px 98px 100px 70px;
+    }
+
+    .card{
+        padding-right: 20px;
+    }
+
+    #pic-text{
+        left: 300px !important;
+      }
+
+    #secondpic-text{
+        left:400px;
+    }
+    header > img {
+        margin-right: 400px !important;
+       }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+   header > img {
+    margin-right: 100px !important;
+   }
+   main > div > p{
+    left: 170px !important;
+   }
+
+   #card-discribtion{
+    min-width: 280px;
+   }
+
+   #mama-div{
+    gap: 80px;
+    padding-left: 70px;
+   }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+    header > h1{
+        display: none !important;
+    }
+    #pic-text{
+      left: 100px !important;
+      font-size: 50px;
+      top:100px;
+    }
+
+    #secondpic-text{
+        display: none !important;
+    }
+
+    #big-pic{
+        height: 306px;
+        margin-bottom: 40px;
+    }
+    #mama-div{
+        display: block;
+    }
+
+    #discover{
+        font-size: 10px;
+    }
+    #title, #content{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+     
+    header{
+        padding: 20px 18px 21px 40px;
+    }
+
+    body > i {
+        display: block !important;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    header > h1{
+        display: none !important;
+    }
+
+    #pic-text{
+      left: 100px !important;
+      font-size: 35px;
+      top:50px;
+    }
+
+    #secondpic-text{
+        display: none !important;
+    }
+
+    #big-pic{
+        height: 150px;
+        margin: 50px 0 40px 0 !important;
+
+    }
+    #mama-div{
+        display: block;
+    }
+
+    #discover{
+        font-size: 10px;
+    }
+    #title, #content{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+     
+    header{
+        padding: 25px 8px 11px 40px;
+        margin-top: -50px
+    }
+
+    #logo{
+        width: 15px;
+        height: 20px;
+    }
+
+    body > i {
+        display: block !important;
+        width: 30px;
+        height: 30px;
+    }
+}
+
