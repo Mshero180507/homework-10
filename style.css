@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *{
     padding: 0;
     margin: 0;
@@ -29,7 +36,7 @@ header{
     display: inline-block;
 }
 
-body > i {
+header > i {
     display: none !important;
 }
 
@@ -66,6 +73,8 @@ body > i {
 
 #mama-div{
     padding: 0px 98px 140px 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap:104px
 }
@@ -97,8 +106,11 @@ body > i {
 }
 
 #cards{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .card-img{
@@ -211,10 +223,11 @@ body > i {
         padding: 20px 18px 21px 40px;
     }
 
-    body > i {
-        display: block !important;
+    header > i {
+        display: inline-block !important;
         width: 30px;
         height: 30px;
+        margin-left: -100px;
     }
 }
 
@@ -260,10 +273,11 @@ body > i {
         height: 20px;
     }
 
-    body > i {
-        display: block !important;
+    header > i {
+        display: inline-block !important;
         width: 30px;
         height: 30px;
+        margin-left: -300px;
     }
 }
 
